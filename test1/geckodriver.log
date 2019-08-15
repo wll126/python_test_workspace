@@ -1,0 +1,33 @@
+1549879371332	geckodriver	INFO	Listening on 127.0.0.1:62934
+1549879374342	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.l5cVEonkFXl0
+1549879374347	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1549879374352	geckodriver::marionette	INFO	Connecting to Marionette on localhost:63672
+1549879375071	Marionette	INFO	Listening on port 63672
+1549879375478	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1549879382867	Marionette	INFO	New connections will no longer be accepted
+[Child 8472] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
+1549879391932	geckodriver	INFO	Listening on 127.0.0.1:51440
+1549879394955	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.nHbvExw4QgZN
+1549879394960	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1549879394968	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52130
+1549879395670	Marionette	INFO	Listening on port 52130
+1549879396040	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1549879403439	Marionette	INFO	New connections will no longer be accepted
+[Child 3968] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
+1549879419975	geckodriver	INFO	Listening on 127.0.0.1:58012
+1549879422994	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.vdQI4Zgmzcgm
+1549879422999	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1549879423005	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58734
+1549879423742	Marionette	INFO	Listening on port 58734
+1549879424040	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+[Child 4656] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+[Child 4656] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+nnecting to Marionette on localhost:51172
+1549879461228	Marionette	INFO	Listening on port 51172
+1549879461596	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1549879468996	Marionette	INFO	New connections will no longer be accepted
+[Child 6252] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143

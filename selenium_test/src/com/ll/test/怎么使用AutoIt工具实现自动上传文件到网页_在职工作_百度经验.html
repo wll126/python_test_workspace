@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://jingyan.baidu.com/album/925f8cb8df6f11c0dde056c1.html?picindex=5 -->
+<html style="overflow: hidden;"><!--STATUS OK--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="referrer" content="always"><title>
+怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验</title><link rel="shortcut icon" href="https://jingyan.baidu.com/favicon.ico?v=20171030" type="image/x-icon"><link rel="icon" sizes="any" mask="" href="https://exp.bdstatic.com/static/common-jquery/widget/img-baidu-com/baidu_icon_85beaf5.svg">
+<script async="" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/feature.min.js.下载"></script><script async="" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/dp.min.js.下载"></script><script src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/hm.js.下载"></script><script async="" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/alog.min.js.下载"></script><script>
+    window.alogObjectConfig = {
+        sample: '1',
+ 
+        product: '132',  
+        page: '132_1510',  
+ 
+        speed: {
+            sample: '0.12'   
+        },
+ 
+        monkey: {
+            sample: '0.12'   
+        },
+ 
+        exception: { 
+            sample: '0.12'   
+        },
+ 
+        feature: {
+            sample: '0.12'   
+        },
+ 
+        cus: {
+            sample: '0'   
+        },
+ 
+        csp: {
+            sample: '0.12',  
+            'default-src': [
+                {match: '*bae.baidu.com', target: 'Accept,Warn'},
+                {match: '*.baidu.com,*.bdstatic.com,*.baidustatic.com,*.baiduimg.com,*.bdimg.com,localhost,*.hao123.com,*.hao123img.com,*.baidubce.com', target: 'Accept'},
+                {match: /^(127|172|192|10)(\.\d+){3}$/, target: 'Accept'},
+                {match: '*', target: 'Accept,Warn'}
+            ]
+        }
+    };
+ 
+     void function(a,b,c,d,e,f,g){a.alogObjectName=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=a[e].l||+new Date,d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d;var h=!0;if(a.alogObjectConfig&&a.alogObjectConfig.sample){var i=Math.random();a.alogObjectConfig.rand=i,i>a.alogObjectConfig.sample&&(h=!1)}h&&(f=b.createElement(c),f.async=!0,f.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),g=b.getElementsByTagName(c)[0],g.parentNode.insertBefore(f,g))}(window,document,"script","/hunter/alog/alog.min.js","alog"),void function(){function a(){}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date),alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:a,tti:a,page_ready:a}}();
+    void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+</script>
+
+<meta itemprop="dateUpdate" content="2017-08-23 11:02:51">
+
+<meta name="keywords" content="怎么使用AutoIt工具实现自动上传文件到网页,在职工作,职场就业,职场/理财">
+
+<meta name="description" content="怎么使用AutoIt工具实现自动上传文件到网页,Au3脚本是AutoIt3Widow自动安装脚本语言，AutoIt是一种自动控制工具。它可以被用来自动完成任何基于Widow或DOS的简单任务。它最初被设计用来自动完成安装那些其它方法不能自动安装的软件。那么现在我们就通过举例来查看一下怎么使用AutoIt工具实现自动上传文件到网页">
+<script type="text/javascript">!function(){var n={},e={};n.context=function(n,r){var t=arguments.length;if(t>1)e[n]=r;else if(1==t){if("object"!=typeof n)return e[n];for(var i in n)n.hasOwnProperty(i)&&(e[i]=n[i])}else if(0==t)return e},"F"in window||(window.F=n)}();;</script><!--[if lt IE 9]><script type="text/javascript" src="/static/common/tool/html5.js"></script><![endif]--><script>var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "//hm.baidu.com/hm.js?46c8852ae89f7d9526f0082fafa15edd"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();</script><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_sync_css_0_2800bb1.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_async_css_0_c8d78e9.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/step_7a6faae.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/redbox_9454f10.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/favor_ee7602f.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_498df33.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/special-msg_d02dba8.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/go-and-see_d818767.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/douniwan_6ec14e6.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/school2016_b4c6cb1.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/badge_2385538.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/super-2016_46f8488.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/marathon_d00c0a0.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/redbox-video_68a545b.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/prize2017_99af780.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/msg_8ee3316.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/amazing-2016_b458231.css"><link rel="stylesheet" type="text/css" href="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/jquery-ui_d16d3c5.css"><script> 
+	if(typeof(alog) !== 'undefined') {
+		alog('speed.set', 'ht', +new Date); 
+	}
+</script></head>
+<body class="" style=""><header class="header" style="height: 92px;">
+<div class="top clearfix">
+<div class="top-left">
+<a href="http://jingyan.baidu.com/article/925f8cb8df6f11c0dde056c1.html" class="back" log="type:2016,module:step,page:index,pos:header_back,action:click"></a>
+</div>
+<div class="top-right">
+<ul class="options clearfix">
+<li>
+<a href="javascript:;" id="vote-btn" class="vote" log="type:2016,module:step,page:index,pos:header_vote,action:click">
+<b class="num">5</b>
+<b class="hover-tip">投票</b>
+<b class="tip">已投票</b>
+</a>
+</li>
+<li>
+<a href="javascript:;" id="favor-btn" class="favor" log="type:2016,module:step,page:index,pos:header_favor,action:click">
+<b class="num">2</b>
+<b class="hover-tip">收藏+1</b>
+<b class="tip">已收藏</b>
+</a>
+</li>
+</ul>
+</div>
+<div class="title" id="exp-title" style="left: 215px;">
+<h1>
+怎么使用AutoIt工具实现自动上传文件到网页
+<div class="audio-wp" data-title="" data-text="" data-for="" style="display: inline-block;">
+<span class="audio-inner">
+<span class="audio-icon"></span><span class="audio-icon-2"></span><span class="audio-icon-3"></span></span>
+<span class="desc">听语音</span>
+</div>
+</h1>
+</div>
+<form action="https://jingyan.baidu.com/search" name="step-search-form" method="get" id="step-search-form" class="step-search-form" style="display: block; left: 886px; width: 330px;">
+<input class="keyword" id="keyword" autocomplete="off" maxlength="256" tabindex="1" size="23" name="word" placeholder="请输入搜索内容" value="autoit" style="width: 250px;">
+<input type="submit" class="submitBtn" value="搜索经验">
+</form>
+</div>
+</header>
+<div class="waiting-step-loading" id="waiting-step-loading" style="display: none;">
+<div class="tip-placehoder"></div>
+<div class="loading-tip">
+<p class="exp-tip">
+百度经验</p>
+<p class="loading-data-tip">
+页面数据加载中...</p>
+</div>
+</div>
+<section class="body-wrapper"><section class="body" id="body" style="height: 478px;">
+<div class="step-container">
+<div class="left-cover" id="left-cover" style="height: 478px; width: 215px;">
+<div class="previous-arrow"></div>
+</div>
+<div class="step-play-container" id="step-play-container" style="left: 215px;">
+<div class="step-play-list" id="step-play-list" style="left: -5520px;">
+<div class="step-item-container step-item-brief clearfix" id="step-item-0">
+<div class="writer-info left" id="brief-writer-info" style="height: 476.983px;">
+<div class="place_holder" style="height: 13%"></div>
+<div class="writer-info-inner" style="height: 74%;position: relative">
+<div class="writer-portrait">
+<a href="https://jingyan.baidu.com/user/npublic?uid=f27185c91821e9675ba1a00b0bfdcccfc33ef6ab" target="_blank" title="蚁人Ant_Man" class="writer-portrait-container">
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/b191e89a81e4baba416e745f4d616e4d82" title="蚁人Ant_Man" width="87px" height="87px" alt="蚁人Ant_Man">
+<div class="portrait-cover"></div>
+</a>
+</div>
+<div class="writer-basic">
+<div class="writer-basic-name">
+蚁人Ant_Man</div>
+<div class="icon-wrp">
+<div class="icon-huiz">
+<a class="u-icon cpm3" title="签约作者" href="https://jingyan.baidu.com/help?page=income-author" target="_blank" rel="nofollow"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="place_holder" style="height: 13%"></div>
+</div>
+<div class="brief-info left">
+<div class="topright"></div>
+<div class="bottomright"></div>
+<div class="place_holder" style="height:9%"></div>
+<div class="brief-info-inner brief-info-inner-withoutimg clearfix" style="height: 70%">
+<div class="brief-info-text left">
+<span class="left-quote" id="brief-left-quote" style="top: 79.8085px;"></span>
+<div class="step-text-wrapper brief-text-area" texttype="brief-text-area" id="step-text-wrapper-0" style="position: absolute; top: 79.8085px;">
+<p>Au3脚本是AutoIt3 Windows自动安装脚本语言，AutoIt 是一种自动控制工具。它可以被用来自动完成任何基于 Windows 或 DOS 的简单任务。它最初被设计用来自动完成安装那些其它方法不能自动安装的软件。那么现在我们就通过举例来查看一下怎么使用AutoIt工具实现自动上传文件到网页</p>
+</div>
+<span class="right-quote" id="brief-right-quote" style="display: block; bottom: 79.8085px;"></span>
+</div>
+</div>
+<div class="place_holder" style="height: 15%"></div>
+</div>
+</div>
+<div class="step-item-container" id="step-item-1">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-text-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">1</span>/9
+</h3>
+</header>
+<section class="text smaller-text-left" id="smaller-text-left-1">
+配置搭建Python+selenium的Windows环境（在此不再细说，请看我的相关文档），安装pycharm工具用来运行Python脚本，下载安装autoit一路默认安装即可。
+</section>
+<section class="text bigger-text-left" id="bigger-text-left-1" style="display: none;">
+配置搭建Python+selenium的Windows环境（在此不再细说，请看我的相关文档），安装pycharm工具用来运行Python脚本，下载安装autoit一路默认安装即可。
+</section>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-2">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">2</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-2">
+<p>简单编写一个upload.html,如左图；用谷歌浏览器打开如右图所示。</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-two-img step-two-img-top" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 216px; width: 480px; margin-top: -23.5px;">
+<div class="inner-img-cover" data-src="b3508d13b07eca80bd736b3a9b2397dda04483be" style="height: 216px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/6a63f6246b600c335f0f8c15104c510fd8f9a1fd.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=714a2be564061d957d4636304bf50a5d/6a63f6246b600c335f0f8c15104c510fd8f9a1fd.jpg" _height="216" _width="480"></div>
+</div>
+<div class="step-img-wrapper step-two-img" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 217px; width: 480px; margin-top: -24px;">
+<div class="inner-img-cover" data-src="d56b3634349b033b9d3eae071fce36d3d439bd7e" style="height: 217px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/3c6d55fbb2fb4316aba928a72aa4462308f7d3bd.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=3e92e1f53c7adab43dd01a4bbbd5b36b/3c6d55fbb2fb4316aba928a72aa4462308f7d3bd.jpg" _height="217" _width="480"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-3">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">3</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-3">
+<p>下面编写Python自动化脚本，运行之后结果如下：</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-two-img step-two-img-top" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 161px; width: 480px; margin-top: 0px;">
+<div class="inner-img-cover" data-src="0db52fadcbef7609956ec24224dda3cc7dd99e43" style="height: 161px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/2934349b033b5bb517b27b233cd3d539b700bc82.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=544b0dca68d0f703e6b294d438fb5148/2934349b033b5bb517b27b233cd3d539b700bc82.jpg" _height="161" _width="480"></div>
+</div>
+<div class="step-img-wrapper step-two-img" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 385px; width: 480px; margin-top: -108px;">
+<div class="inner-img-cover" data-src="a54e55fbfbedab645d6a161dfd36afc378311e97" style="height: 385px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/d31b0ef41bd5ad6e83e13f378bcb39dbb7fd3cd6.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=32a4eee713d8bc3ec60807c2b28aa6c8/d31b0ef41bd5ad6e83e13f378bcb39dbb7fd3cd6.jpg" _height="385" _width="480"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-4">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">4</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-4">
+<p>保持此窗口打开，在开始菜单栏中打开autoit window info,如图所示：</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-one-img" steptype="step-one-img" imgloaded="2" style="height: 351.889px;">
+<div class="img-cover" style="height: 470px; width: 311px; margin-top: -59.5px;">
+<div class="inner-img-cover" data-src="d5462bfae6cd7b89d34d605e052442a7d8330e8e" style="height: 470px; width: 311px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/d000baa1cd11728b0a0cd6ffc2fcc3cec2fd2ccd.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=f12d338d3ea85edffa8cff2b795509d8/d000baa1cd11728b0a0cd6ffc2fcc3cec2fd2ccd.jpg" _height="470" _width="311"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-5">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">5</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-5">
+<p>左击Finder Tool下面的按钮，分别拖拽到窗口的输入框和打开按钮，如图获得对应的属性值</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-two-img step-two-img-top" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 370px; width: 480px; margin-top: -100.5px;">
+<div class="inner-img-cover" data-src="d5462bfae6cd7b89d5937e5e052442a7d8330e34" style="height: 370px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/d000baa1cd11728b0cd2c8ffc2fcc3cec2fd2c6b.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=f7f32d8d3ea85edffa8cff2b795609d8/d000baa1cd11728b0cd2c8ffc2fcc3cec2fd2c6b.jpg" _height="370" _width="480"></div>
+</div>
+<div class="step-img-wrapper step-two-img" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 367px; width: 480px; margin-top: -99px;">
+<div class="inner-img-cover" data-src="58af236d55fbb2fbde9b1ccf454a20a44723dc78" style="height: 367px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/86d6277f9e2f0708b5b56edde324b899a801f2bf.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=30c6a0fe79f082022d9290377bfafb8a/86d6277f9e2f0708b5b56edde324b899a801f2bf.jpg" _height="367" _width="480"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-6">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">6</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-6">
+<p>然后打开SCITE Script Editor编辑器，编写AutoIt脚本，如下图所示：下一步，运行测试一下这个脚本是否有效（注意：一定要保持窗口处于打开状态），运行之后的结果看右图</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-two-img step-two-img-top" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 243px; width: 480px; margin-top: -37px;">
+<div class="inner-img-cover" data-src="32bb9c8ba61ea8d3ef5c39d99d0a304e241f58b5" style="height: 243px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/f2deb48f8c5494eee25c42c427f5e0fe98257ef4.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=777b743a9b2397ddd679990c6983b216/f2deb48f8c5494eee25c42c427f5e0fe98257ef4.jpg" _height="243" _width="480"></div>
+</div>
+<div class="step-img-wrapper step-two-img" steptype="step-two-img" imgloaded="2" style="height: 169.843px;">
+<div class="img-cover" style="height: 219px; width: 480px; margin-top: -25px;">
+<div class="inner-img-cover" data-src="148f28d3d539b6008123426ae350352ac75cb73b" style="height: 219px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/21a4462309f7905223f20ae306f3d7ca7acbd57a.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=3004cbf18d01a18bf0eb1347ae2d0761/21a4462309f7905223f20ae306f3d7ca7acbd57a.jpg" _height="219" _width="480"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-7">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">7</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-7">
+<p>下面我们需要将上面的脚本转为exe格式，为了方便Python的调用；打开Compile Script to.exe工具，将其生成为exe可执行文件。点击“Browser”按钮，选择upfile.au3文件，点击“Convert”转换为upfile.exe如图所示：</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-three-img-top-container clearfix">
+<div class="step-img-wrapper step-three-img-top step-three-img-topleft left" steptype="step-three-img-top" imgloaded="2" style="height: 178.996px;">
+<div class="img-cover" style="height: 167px; width: 235px; margin-top: 0px;">
+<div class="inner-img-cover" data-src="3792cb39b6003af3836b92bd3f2ac65c1238b6df" style="height: 167px; width: 235px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/472309f790529822cbe2771eddca7bcb0b46d41e.jpg" data-src="https://imgsa.baidu.com/exp/w=235/sign=3e3a5c92942f07085f052d03dc26b865/472309f790529822cbe2771eddca7bcb0b46d41e.jpg" _height="167" _width="235"></div>
+</div>
+<div class="step-img-wrapper step-three-img-top left" steptype="step-three-img-top" imgloaded="2" style="height: 178.996px;">
+<div class="img-cover" style="height: 166px; width: 235px; margin-top: 0px;">
+<div class="inner-img-cover" data-src="8b527d2762d0f7031b57db0102fa513d2497c5c3" style="height: 166px; width: 235px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/8718367adab44aeda4abf039b91c8701a08bfb02.jpg" data-src="https://imgsa.baidu.com/exp/w=235/sign=856b74c948a7d933bfa8e3709849d194/8718367adab44aeda4abf039b91c8701a08bfb02.jpg" _height="166" _width="235"></div>
+</div>
+</div>
+<div class="step-img-wrapper step-three-img-bottom" steptype="step-three-img-bottom" imgloaded="2" style="height: 157.638px;">
+<div class="img-cover" style="height: 77px; width: 251px; margin-top: 0px;">
+<div class="inner-img-cover" data-src="310f3b1f95cad1c8b220b5fa753e6709c83d5110" style="height: 77px; width: 251px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/e1fe9925bc315c60210e223287b1cb1348547757.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=a711ac4f06f431adbcd242317b34ac0f/e1fe9925bc315c60210e223287b1cb1348547757.jpg" _height="77" _width="251"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-8">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">8</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-8">
+<p>下面就可以直接在Python的脚本中对upfile.exe进行调用啦。脚本截图如下：</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-one-img" steptype="step-one-img" imgloaded="2" style="height: 351.889px;">
+<div class="img-cover" style="height: 179px; width: 480px; margin-top: 0px;">
+<div class="inner-img-cover" data-src="7e7f7909c93d70cf2158e2d0f2dcd100bba12b09" style="height: 179px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/8cb1cb1349540923c7cb2ba39858d109b2de4948.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=51a9d14224dda3cc0be4b92831eb3905/8cb1cb1349540923c7cb2ba39858d109b2de4948.jpg" _height="179" _width="480"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container" id="step-item-9">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-item-textimg-inner clearfix" style="height:82%">
+<section class="step-text-container left">
+<header>
+<h3 class="step-item-header">
+<span class="current-order-in-step">9</span>/9
+</h3>
+</header>
+<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-9">
+<p>运行Python脚本之后，最终文件自动上传到网页上，结果如图所示：</p>
+</div>
+</section>
+<section class="step-img-container left">
+<div class="step-img-wrapper step-one-img" steptype="step-one-img" imgloaded="2" style="height: 351.889px;">
+<div class="img-cover" style="height: 208px; width: 480px; margin-top: 0px;">
+<div class="inner-img-cover" data-src="9864a2315c6034a8a910f05cc11349540823763a" style="height: 208px; width: 480px;"></div>
+<img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/00e93901213fb80e8c23290a3cd12f2eb8389479.jpg" data-src="https://imgsa.baidu.com/exp/w=480/sign=23e555d93e9b033b2c88fdd225cc3620/00e93901213fb80e8c23290a3cd12f2eb8389479.jpg" _height="208" _width="480"></div>
+</div>
+</section>
+</div>
+<div class="place_holder" style="height: 9%"></div>
+</div>
+<div class="step-item-container step-item-recommand" id="step-item-10">
+<div class="place_holder" style="height:9%"></div>
+<div class="step-recommand-inner" style="height: 72%;">
+<div class="replay">
+<dl class="clearfix">
+<dt class="replay-img left">
+<a class="replay-img-container" href="javascript:;" id="replay-step-e">
+<img class="recommand-img" alt="怎么使用AutoIt工具实现自动上传文件到网页" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/6a63f6246b600c335f0f8c15104c510fd8f9a1fd(1).jpg" data-src="https://imgsa.baidu.com/exp/whcrop=160,120/sign=4b58d793c08065387bbff251f8ad9c75/6a63f6246b600c335f0f8c15104c510fd8f9a1fd.jpg" width="160px" height="120px">
+<div class="img-border"></div>
+</a>
+</dt>
+<dd class="replay-title left">
+<h4>
+怎么使用AutoIt工具实现自动上传文件到网页
+</h4>
+<a href="javascript:;" id="replay-step" class="replay-step">[重新阅读]</a>
+</dd>
+</dl>
+</div>
+<div class="recommand-list clearfix" id="recommend-list-container"><h3>你可能对这些经验也感兴趣</h3><div class="recommend-exp "><div class="recommend-exp-image"><a class="recommend-exp-link" href="https://jingyan.baidu.com/album/adc81513adde34f723bf733b.html" target="_self"><img class="recommand-img" alt="如何使用ftp工具上传文件到服务器" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/148f28d3d539b600d0a67d26e550352ac75cb7fc.jpg" width="120px" height="90px" style="left: 0px; top: 18.6px; width: 120px; height: 52.8px;"><div class="img-border"></div></a></div><a class="recommend-exp-title" href="https://jingyan.baidu.com/album/adc81513adde34f723bf733b.html" target="_self" title="如何使用ftp工具上传文件到服务器">如何使用ftp工具上传文件到服务器</a></div><div class="recommend-exp "><div class="recommend-exp-image"><a class="recommend-exp-link" href="https://jingyan.baidu.com/album/624e7459504b9234e8ba5ad3.html" target="_self"><img class="recommand-img" alt="网页如何上传文件到百度云盘" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/c9d4cf43ad4bd113b3f78b935cafa40f4bfb051d.jpg" width="120px" height="90px" style="left: 0px; top: 5.1px; width: 120px; height: 79.8px;"><div class="img-border"></div></a></div><a class="recommend-exp-title" href="https://jingyan.baidu.com/album/624e7459504b9234e8ba5ad3.html" target="_self" title="网页如何上传文件到百度云盘">网页如何上传文件到百度云盘</a></div><div class="recommend-exp "><div class="recommend-exp-image"><a class="recommend-exp-link" href="https://jingyan.baidu.com/album/6525d4b177a053ac7d2e94b2.html" target="_self"><img class="recommand-img" alt="使用FTP上传工具上传文件到网站" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/734f12f3d7ca7bcb50cd33d8b7096b63f724a850.jpg" width="120px" height="90px" style="left: 5.45455px; top: 0px; width: 109.091px; height: 90px;"><div class="img-border"></div></a></div><a class="recommend-exp-title" href="https://jingyan.baidu.com/album/6525d4b177a053ac7d2e94b2.html" target="_self" title="使用FTP上传工具上传文件到网站">使用FTP上传工具上传文件到网站</a></div><div class="recommend-exp  last"><div class="recommend-exp-image"><a class="recommend-exp-link" href="https://jingyan.baidu.com/album/fdffd1f85a894af3e98ca18b.html" target="_self"><img class="recommand-img" alt="会声会影12 出现autoit 错误" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/1e71f724b899a901f5762c4e19950a7b0308f5cc.jpg" width="120px" height="90px" style="left: 0px; top: 1.2px; width: 120px; height: 87.6px;"><div class="img-border"></div></a></div><a class="recommend-exp-title" href="https://jingyan.baidu.com/album/fdffd1f85a894af3e98ca18b.html" target="_self" title="会声会影12 出现autoit 错误">会声会影12 出现autoit 错误</a></div></div>
+</div>
+<div class="place_holder" style="height: 14%"></div>
+</div></div>
+<div class="guide-container" style="top: 129px; display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/user-guide_083b4c4.gif"></div></div>
+<div class="right-cover" id="right-cover" style="height: 478px; width: 231px;">
+<div class="next-arrow"></div>
+</div>
+</div>
+</section></section><footer class="footer">
+<script>
+    void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+</script>
+<div class="step-pager" id="step-pager">
+<ul id="step-pager-list" class="clearfix" style="width: 480px;"><li class="item step" style="display: block;"><a href="javascript:;" class="step-cover" step-index="0">封</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="配置搭建Python+selenium的Wind..." data-type="0" step-index="1">1</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="简单编写一个upload.html,如左图；用谷..." data-type="0" step-index="2">2</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="下面编写Python自动化脚本，运行之后结果如下..." data-type="0" step-index="3">3</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="保持此窗口打开，在开始菜单栏中打开autoit ..." data-type="0" step-index="4">4</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="左击Finder Tool下面的按钮，分别拖拽到..." data-type="0" step-index="5">5</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview current" data="然后打开SCITE Script Editor编..." data-type="0" step-index="6">6</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="下面我们需要将上面的脚本转为exe格式，为了方便..." data-type="0" step-index="7">7</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="下面就可以直接在Python的脚本中对upfil..." data-type="0" step-index="8">8</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="preview" data="运行Python脚本之后，最终文件自动上传到网页..." data-type="0" step-index="9">9</a></li><li class="item step" style="display: block;"><a href="javascript:;" class="step-last" step-index="10">尾</a></li></ul>
+</div>
+</footer>
+<script type="text/javascript">
+    (function() {
+        //解决ie图片缓存闪烁问题
+        try {
+            document.execCommand("BackgroundImageCache", false, true);
+        } catch(err) {}
+    })();
+    //异步接口集
+    F.context({
+        //与个人相关
+        'submit_follow' : '/submit/follow',
+        'submit_vote' : '/submit/vote',
+        'submit_author' : '/submit/author',
+        'submit_user' : '/submit/user',
+        'submit_favor' : '/submit/favor',
+        'submit_notice' : '/submit/notice',
+        //公共的异步接口部分
+        'common_isLogin' : '/common/isLogin',
+        'common_isVersionExist' : '/common/isVersionExist',
+        'common_isTitleValid' : '/common/isTitleValid',
+        'common_needToTitle' : '/common/needToTitle',
+        'asyncreq' : '/asyncreq',
+        //评论相关
+        'cid' : '99',
+        'submit_comment' : '/submit/comment',
+        'submit_feedback' : '/submit/exp'
+    });
+</script>
+
+<script type="text/javascript">
+        F.context({
+            "BdStoken" : "e8b688ab7a5d78dd4967858662627822",
+            "bdstt" : "1550557224",
+        });
+        F.context('BFEType', '2');
+    </script>
+<script>
+	if(typeof(alog) !== 'undefined'){
+    	alog('speed.set', 'drt', +new Date); 
+    }//请利用js框架在domreday时调用该代码，或在body的尾部
+</script>
+<script>
+    void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+</script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_sync_js_0_a73d02f.js.下载"></script>
+<script type="text/javascript">require.resourceMap({"res":{"common-jquery:widget/lib/jquery/jquery.js":{"url":"//exp.bdstatic.com/static/common-jquery/widget/lib/jquery/jquery_250bf24.js","pkg":"common-jquery:p1"},"common:widget/lib/tangram/fx/move/move.js":{"url":"//exp.bdstatic.com/static/common/widget/lib/tangram/fx/move/move_4f6a3cf.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/tangram/fx/create/create.js"]},"common:widget/ui/red-bao/red-bao.js":{"url":"//exp.bdstatic.com/static/common/widget/ui/red-bao/red-bao_d2adb02.js","pkg":"common:p11","deps":["common:widget/lib/tangram/base/base.js","common:widget/ui/dialog/dialog.js"]},"common:widget/lib/tangram/ui/Carousel/Carousel.js":{"url":"//exp.bdstatic.com/static/common/widget/lib/tangram/ui/Carousel/Carousel_9ed0987.js","pkg":"common:p2","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/tangram/uiBase/uiBase.js"]},"activity:widget/ui/redbox/redbox.js":{"url":"//exp.bdstatic.com/static/activity/widget/ui/redbox/redbox_58a8c80.js","pkg":"activity:p2","deps":["common:widget/lib/tangram/base/base.js","common:widget/ui/dialog/dialog.js"]},"common-jquery:widget/lib/baidutemplate/baidutemplate.min.js":{"url":"//exp.bdstatic.com/static/common-jquery/widget/lib/baidutemplate/baidutemplate.min_d875663.js","pkg":"common-jquery:p3"},"common-jquery:widget/js/ui/base/base.js":{"url":"//exp.bdstatic.com/static/common-jquery/widget/js/ui/base/base_366a7b8.js","pkg":"common-jquery:p2","deps":["common-jquery:widget/lib/jquery/jquery.js","common-jquery:widget/js/util/event/event.js"]},"common:widget/lib/tangram/base/base.js":{"url":"//exp.bdstatic.com/static/common/widget/lib/tangram/base/base_e37cc01.js","pkg":"common:p0"},"step:widget/header/header.js":{"url":"//exp.bdstatic.com/static/step/widget/header/header_6f356a6.js","pkg":"step:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/fis/event/event.js","common:widget/ui/log/log.js","common-jquery:widget/lib/jquery/jquery.js","common-jquery:widget/js/logic/text2audio/text2audio.es"]}}});</script><script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_async_js_0_28055ad.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_sync_js_1_b781a69.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/common_sync_js_2_fa2e9a7.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/monitor-js_f5d377f.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/framework_d2de9ff.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/shimingzhi_4f92ad8.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/more_158a9f7.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/base_783cdfb.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/error_ed451a4.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/audio-list_c5345f0.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/text2audio_56668f7.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/return_60f55cc.js.下载"></script>
+<script type="text/javascript" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/step_3b906e7.js.下载"></script>
+<script type="text/javascript">!function(){require.async('common:widget/baidu-tongji/baidu-tongji.js', function(b){ b.init('31080716312134777290'); });}();
+!function(){require.async('common:widget/monitor-js/monitor-js.js', function (monitorJs) { monitorJs(); });}();
+!function(){    require.async('step:widget/header/header.js', function (header) {
+        header.init();
+    });
+}();
+!function(){    require.async('step:widget/ui/brand-ads/brand-ads.js',function(ad_log){
+        ad_log.init('');
+    });
+}();
+!function(){    require.async(['common:widget/lib/tangram/base/base.js', 'step:widget/pager/pager.js'], function(T, pager){
+        T.dom.ready(function(){
+            pager.init(0);
+        });
+    });
+}();
+!function(){        F.context({
+            //请求地址
+            "common":'/common',
+            "uoper": '/uoperation',
+            "edit": '/edit/',
+            "logo": 'http://img.baidu.com/img/iknow/exp/logo_uui.jpg',
+            "comment": '/comment/',
+                            "hi": 'https://imgsa.baidu.com/exp/abpic/item/',//空间缩略图片地址
+                        "ucFollowing": '/user/nuc/following',
+            "ucFavorexp": '/user/nuc/favorexp',
+            "title": '怎么使用AutoIt工具实现自动上传文件到网页',
+            "isLogin" : 0,
+            "username": '',
+            "writerId": '',
+            "maxFollowVote": 9999999,
+            "eid": '925f8cb8df6f11c0dde056c1',
+            "isFavor":0,
+            "expFavorNum": 2,
+            "feedbackSuc": 0,
+            "MAX_SUC_FAIL_TIMES": 999999,
+            "stepPic": {"amount":14,"stepPic":[{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/b3508d13b07eca80bd736b3a9b2397dda04483be.jpg","stepIndex":2,"picIndex":1,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/d56b3634349b033b9d3eae071fce36d3d439bd7e.jpg","stepIndex":2,"picIndex":2,"picIndexInStep":2,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/0db52fadcbef7609956ec24224dda3cc7dd99e43.jpg","stepIndex":3,"picIndex":3,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/a54e55fbfbedab645d6a161dfd36afc378311e97.jpg","stepIndex":3,"picIndex":4,"picIndexInStep":2,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/d5462bfae6cd7b89d34d605e052442a7d8330e8e.jpg","stepIndex":4,"picIndex":5,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/d5462bfae6cd7b89d5937e5e052442a7d8330e34.jpg","stepIndex":5,"picIndex":6,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/58af236d55fbb2fbde9b1ccf454a20a44723dc78.jpg","stepIndex":5,"picIndex":7,"picIndexInStep":2,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/32bb9c8ba61ea8d3ef5c39d99d0a304e241f58b5.jpg","stepIndex":6,"picIndex":8,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/148f28d3d539b6008123426ae350352ac75cb73b.jpg","stepIndex":6,"picIndex":9,"picIndexInStep":2,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/3792cb39b6003af3836b92bd3f2ac65c1238b6df.jpg","stepIndex":7,"picIndex":10,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/8b527d2762d0f7031b57db0102fa513d2497c5c3.jpg","stepIndex":7,"picIndex":11,"picIndexInStep":2,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/310f3b1f95cad1c8b220b5fa753e6709c83d5110.jpg","stepIndex":7,"picIndex":12,"picIndexInStep":3,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/7e7f7909c93d70cf2158e2d0f2dcd100bba12b09.jpg","stepIndex":8,"picIndex":13,"picIndexInStep":1,"type":"step"},{"src":"https:\/\/imgsa.baidu.com\/exp\/pic\/item\/9864a2315c6034a8a910f05cc11349540823763a.jpg","stepIndex":9,"picIndex":14,"picIndexInStep":1,"type":"step"}]},
+            "BdStoken" : "e8b688ab7a5d78dd4967858662627822",
+            "bdstt" : "1550557224",
+            'typeId': 2016
+        });
+        
+        require.async(["common:widget/lib/tangram/base/base.js", "step:widget/ui/adjust-size/adjust-size.js", "step:widget/ui/step-album/step-album.js", "step:widget/ui/vote-favor/vote-favor.js", "step:widget/ui/user-guide/user-guide.js", "common:widget/ui/log/log.js"], function(T, adjustSize, stepAlbum, header, userGuide, log){
+            T.dom.ready(function(){
+                if(T.browser.ie && T.browser.ie == 6){
+                    T.dom.setStyle("waiting-step-loading", "height", T.page.getViewHeight()-75);
+                }
+                if(F.context('isBrandAd')){
+                    adjustSize.init({
+                        'img-text-area-withhead':{
+                            height: 360,
+                            width:270,
+                            spaceHeight:107
+                        }
+                    });
+                }else{
+                    adjustSize.init();
+                }
+                
+                adjustSize.resize(1);
+                T.hide("waiting-step-loading");
+                T.on(window, "resize", function(){
+                    adjustSize.resize();
+                });
+                userGuide.init();
+                stepAlbum.init();
+                header.init("vote-btn", "favor-btn", F.context("isFavor"));
+
+                log.init({
+                    query : 'a',        //需要绑定的标签元素，可选，默认为a标签
+                    evtType : 'click',   //鼠标事件定义，可选，默认是click
+                    type: F.context('typeId'),
+                    page: 'step'
+                });
+
+                //左侧推广位
+                /*LeftPromotion.init({
+                    imgSrc: 'http://jingyan.baidu.com/event/img/hb92X240.gif',
+                    url: 'http://jingyan.baidu.com/activity/hongbao201411?fr=step',
+                    target: 'step-play-container'
+                });*/
+            });
+        });
+    }();
+!function(){        require.async('common-jquery:widget/js/logic/https/https.es', function (https) {
+            // 自动修复https里的超链接
+            https.autoFixAnchor();
+        });
+    }();
+!function(){    function monitorHTTPWarning(ignore) {
+        var cache = {};
+
+        var selector = ['link', 'script', 'img', 'embed', 'iframe'];
+        var knownHost = ['jingyan.baidu.com', 'hm.baidu.com', 'exp.bdstatic.com', 'himg.bdimg.com', 'img.baidu.com', 'kstj.baidu.com', 'hiphotos.baidu.com'];
+
+        function monitor() {
+            selector.reduce(function (partial, v) {
+                var arr = document.getElementsByTagName(v);
+                for (var i = 0, len = arr.length; i < len; i++) {
+                    partial.push(arr[i]);
+                }
+                return partial;
+            }, [])
+            .forEach(function (v) {
+                var url = v.href || v.src || '';
+                // 只统计http开头
+                if (url.indexOf('http:') !== 0) {
+                    return 1;
+                }
+
+                // 避免重复发请求
+                if (cache[url]) {
+                    cache[url] += 1;
+                    return 2;
+                }
+                
+                // 忽略已知域名
+                if (ignore && knownHost.some(function (v) {return ~url.indexOf(v)})) {
+                    return 3;
+                }
+                cache[url] = 1;
+                var img = new Image();
+                img.src = '//kstj.baidu.com/v.gif?'
+                    + 'pid=180&type=2000&module=common&page=https&action=warning&t=' + Date.now()
+                    + '&curl=' + encodeURIComponent(location.href)
+                    + '&rurl=' + encodeURIComponent(url)
+            });
+        }
+
+        // 1 8 27 64 125
+        for(var i = 1; i < 6; i++) {
+            (function (i){
+                setTimeout(function(){
+                    monitor();
+                }, i*i*i*1000);
+            })(i);
+        }
+    }
+
+    if (Math.floor(Math.random() * 100) < 100) {
+        monitorHTTPWarning(0);
+    }
+}();
+!function(){    require.async('common-jquery:widget/lasting-time/lasting-time.es', function (LastingTime) {
+        new LastingTime();
+    });
+}();</script>
+<script> var _trace_page_logid = 1224180759; </script><div id="album-box-layerundefined" class="album-box-layer" hasshown="shown"></div><div id="album-boxundefined" class="album-box" style="top: 0px;"><a class="close-btn" title="关闭相册"></a><div id="album-box-contentundefined" class="album-box-content" style="text-align: center;"><img id="currentAlbumImgundefined" src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/32bb9c8ba61ea8d3ef5c39d99d0a304e241f58b5.jpg" style="margin-top: 98px;"></div><div id="left-areaundefined" class="left-area" style="width: 50%; height: 542px;"></div><div id="right-areaundefined" class="right-area" style="width: 50%; height: 542px;"></div><div id="album-box-bottomundefined" class="album-box-bottom"><div class="album-playlist-container" id="album-playlist-containerundefined" style="width:385px"><div class="album-playlist"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/b3508d13b07eca80bd736b3a9b2397dda04483be.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/d56b3634349b033b9d3eae071fce36d3d439bd7e.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/0db52fadcbef7609956ec24224dda3cc7dd99e43.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/a54e55fbfbedab645d6a161dfd36afc378311e97.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/d5462bfae6cd7b89d34d605e052442a7d8330e8e.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/d5462bfae6cd7b89d5937e5e052442a7d8330e34.jpg" style=""><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/58af236d55fbb2fbde9b1ccf454a20a44723dc78.jpg" style=""><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/32bb9c8ba61ea8d3ef5c39d99d0a304e241f58b5.jpg" class="current" _width="683" _height="346" loaded="1" style=""><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/148f28d3d539b6008123426ae350352ac75cb73b.jpg" style=""><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/3792cb39b6003af3836b92bd3f2ac65c1238b6df.jpg" style=""><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/8b527d2762d0f7031b57db0102fa513d2497c5c3.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/310f3b1f95cad1c8b220b5fa753e6709c83d5110.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/7e7f7909c93d70cf2158e2d0f2dcd100bba12b09.jpg" style="display: none;"><img src="./怎么使用AutoIt工具实现自动上传文件到网页_在职工作_百度经验_files/9864a2315c6034a8a910f05cc11349540823763a.jpg" style="display: none;"></div></div></div></div></body></html>
