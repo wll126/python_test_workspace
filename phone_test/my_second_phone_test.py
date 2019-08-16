@@ -7,6 +7,7 @@ import uiautomator2
 import time
 import schedule
 
+
 def test_add_note():
     '''测试写个笔记试试'''
     # 连接usb设备

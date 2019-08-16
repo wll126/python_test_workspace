@@ -1,0 +1,6 @@
+5574d0f97d26
+
+初始化手机端
+python -m uiautomator2 init
+
+http://localhost:17310/static/loading.svg
