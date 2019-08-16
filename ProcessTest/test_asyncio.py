@@ -10,6 +10,7 @@ asyncio的编程模型就是一个消息循环。
 然后把需要执行的协程扔到EventLoop中执行，就实现了异步IO。
 """
 
+
 @asyncio.coroutine
 def hello():
     print("Hello China (%s)" % threading.current_thread())

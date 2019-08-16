@@ -21,6 +21,7 @@ def test_add_note():
     d(resourceId='com.miui.notes:id/done').click()
     d.app_stop('com.miui.notes')
 
+
 def test_punch_the_clock():
     '''钉钉打卡'''
     # 包名

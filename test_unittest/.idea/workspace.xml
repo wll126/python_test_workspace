@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00813eb7-84dc-49cb-9459-4c57a19efc3d" name="Default Changelist" comment="" />
+    <list default="true" id="00813eb7-84dc-49cb-9459-4c57a19efc3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessTest/test_asyncio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessTest/test_asyncio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,29 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_HTMLTestRunnerCN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-              <folding>
-                <element signature="e#24#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://D:/python/Lib/site-packages/report/HTMLTestRunnerCN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="535" lean-forward="true" selection-start-line="535" selection-end-line="535" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -46,12 +32,14 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -63,10 +51,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phone_test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_HTMLTestRunnerCN">
+  <component name="RunManager" selected="Python tests.Unittests in test_HTMLTestRunnerCN.py">
     <configuration name="test_HTMLTestRunnerCN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test_unittest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,8 +112,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_HTMLTestRunnerCN" />
         <item itemvalue="Python tests.Unittests in test_HTMLTestRunnerCN.py" />
+        <item itemvalue="Python.test_HTMLTestRunnerCN" />
       </list>
     </recent_temporary>
   </component>
@@ -145,11 +134,17 @@
     <history-entry file="Unittests_in_test_HTMLTestRunnerCN_py - 2019.03.09 at 11h 12m 25s.xml">
       <configuration name="Unittests in test_HTMLTestRunnerCN.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_HTMLTestRunnerCN_py - 2019.08.15 at 11h 37m 12s.xml">
+      <configuration name="Unittests in test_HTMLTestRunnerCN.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_HTMLTestRunnerCN_py - 2019.08.15 at 11h 39m 20s.xml">
+      <configuration name="Unittests in test_HTMLTestRunnerCN.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962631" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962631" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -172,23 +167,6 @@
     <entry file="file://$PROJECT_DIR$/plug/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_ReportCN.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_HTMLTestRunnerCN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-287100998/sys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5675">
@@ -198,8 +176,25 @@
     </entry>
     <entry file="file://D:/python/Lib/site-packages/report/HTMLTestRunnerCN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="535" lean-forward="true" selection-start-line="535" selection-end-line="535" />
+        <state relative-caret-position="2411">
+          <caret line="479" column="21" lean-forward="true" selection-start-line="479" selection-start-column="21" selection-end-line="479" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_ReportCN.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2575">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_HTMLTestRunnerCN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
