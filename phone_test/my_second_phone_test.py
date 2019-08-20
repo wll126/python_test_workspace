@@ -9,7 +9,7 @@ import schedule
 
 
 def test_add_note():
-    '''测试写个笔记试试'''
+    '''  测试写个笔记试试  '''
     # 连接usb设备
     d = uiautomator2.connect_usb()
     print(d.device_info)
