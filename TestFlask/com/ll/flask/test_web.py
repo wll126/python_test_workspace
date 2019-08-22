@@ -68,6 +68,22 @@ def test_abort(id):
         abort(404)
     return '<h1>hello ,%s </h1>' % id
 
+@app.route('/get_info')
+def test_get_request_infos():
+    print("测试请求信息")
+    args=request.args
+    form=request.form
+    headers=request.headers
+    url=request.url
+    origin=request.cookies
+    print('args=',args)
+    print('form=',form)
+    print('headers=',headers)
+    print('url=',url)
+    print('origin=',origin)
+    return args
+
+
 class MiddleWare:
     def __init__(self,wsgi_app):
         self.wsgi_app=wsgi_app

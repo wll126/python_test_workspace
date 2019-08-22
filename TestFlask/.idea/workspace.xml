@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9e050-93b2-4f16-b319-e960f87f6e5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestRrequestsHtml/test_requests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/ll/flask/test_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ll/flask/test_web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestItchat/com/ll/chat/itchat.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../TestItchat/com/ll/chat/itchat.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestItchat/com/ll/chat/my_first_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TestItchat/com/ll/chat/my_first_chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestItchat/com/ll/chat/test_itchat_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TestItchat/com/ll/chat/test_itchat_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestRrequestsHtml/test_html_equest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TestRrequestsHtml/test_html_equest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test1/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test1/test2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +18,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/ll/flask/test_web.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+            <state relative-caret-position="78">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="e#63#86#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/python/Lib/site-packages/flask/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="1934" selection-start-line="1934" selection-end-line="1934" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/python/Lib/site-packages/flask/globals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="59" column="7" selection-start-line="59" selection-end-line="59" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -85,12 +94,12 @@
       <list>
         <option value="$PROJECT_DIR$/com/ll/mongodb/test_mongodb.py" />
         <option value="$PROJECT_DIR$/com/ll/flask/templates/index.html" />
-        <option value="$PROJECT_DIR$/com/ll/flask/test_web.py" />
         <option value="$PROJECT_DIR$/com/ll/flask/static/robots.txt" />
+        <option value="$PROJECT_DIR$/com/ll/flask/test_web.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -224,16 +233,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="10" y="20" width="1346" height="688" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962631" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2565284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3293718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39898133" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3293718" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44090056" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -319,13 +327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="950" lean-forward="true" selection-start-line="950" selection-end-line="950" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -362,10 +363,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/python/Lib/site-packages/werkzeug/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3017">
+          <caret line="293" column="30" selection-start-line="293" selection-start-column="30" selection-end-line="293" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Lib/site-packages/flask/globals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="59" column="7" selection-start-line="59" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="1934" selection-start-line="1934" selection-end-line="1934" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com/ll/flask/test_web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        <state relative-caret-position="78">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="e#63#86#0" expanded="true" />
           </folding>
