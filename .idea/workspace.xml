@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e54c586-367a-41ce-9950-fcf7de3226e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProcessTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcessTest/test_asyncio.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessTest/test_asyncio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestItchat/com/ll/chat/itchat.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/TestItchat/com/ll/chat/itchat.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestItchat/com/ll/chat/my_first_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestItchat/com/ll/chat/my_first_chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestItchat/com/ll/chat/test_itchat_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestItchat/com/ll/chat/test_itchat_app.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +27,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -38,11 +38,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test1" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -83,7 +84,6 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -94,6 +94,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3293718" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />

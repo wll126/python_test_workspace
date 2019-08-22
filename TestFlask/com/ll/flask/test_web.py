@@ -10,14 +10,17 @@ import datetime
 from flask import request
 from flask import redirect
 from flask import abort
+from flask import render_template
 
-app=Flask(__name__) #创建一个wsgi应用
+app=Flask(__name__,template_folder="templates") #创建一个wsgi应用
 
 
 @app.route('/')   # 添加路由 ：根
 def test_first():
     print("测试首先接口")
-    return "返回一个字符串 hello"
+    response=make_response()
+    response.set_cookie('index','2')
+    return render_template('index.html')
 
 
 @app.route('/login', methods=['GET','POST'])
@@ -25,7 +28,7 @@ def login():
     username=request.form.get('username')
     password=request.form.get('password')
     print("user:%s,password:%s" %(username,password))
-    return 'post request'
+    return 'post request login successful!'
 
 @app.route("/set_cookie")
 def set_cookie():
@@ -34,6 +37,8 @@ def set_cookie():
     # 设置cookie有效时间
     outdate=datetime.datetime.today()+datetime.timedelta(days=30)
     response.set_cookie('username','evancss',expires=outdate)
+    response.set_cookie('password', '123456', expires=outdate)
+    response.set_cookie('logintime', str(datetime.datetime.today()), expires=outdate)
     return response
 
 @app.route('/get_cookie')
@@ -63,7 +68,15 @@ def test_abort(id):
         abort(404)
     return '<h1>hello ,%s </h1>' % id
 
+class MiddleWare:
+    def __init__(self,wsgi_app):
+        self.wsgi_app=wsgi_app
+
+    def __call__(self, *args, **kwargs):
+        return self.wsgi_app(*args,**kwargs)
+
 
 if __name__ =="__main__":
-    app.run(debug=True)
+    app.wsgi_app=MiddleWare(app.wsgi_app)
+    app.run(port=9999,debug=True)
 

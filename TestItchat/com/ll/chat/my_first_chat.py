@@ -65,6 +65,7 @@ def text_reply(msg):
 
 
 def get_normal_friends():
+    itchat.auto_login(hotReload=True)  # 登录微信,hotReload保持登录
     friends=itchat.get_friends()
     print(friends)
     #  获取好友信息
@@ -111,6 +112,7 @@ def change_group():
 itchat.auto_login(hotReload=True)     # 登录微信,hotReload保持登录
 # 给文件助手发消息
 # itchat.send_msg('Hello ,filehelper', toUserName='filehelper')
+get_normal_friends()
 itchat.run()
 
 
