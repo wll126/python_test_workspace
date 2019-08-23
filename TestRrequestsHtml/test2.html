@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>WEditor</title>
+  <--<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="/static/other/bootstrap.min.css">
+  <--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+  <link rel="stylesheet" href="/static/other/index.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/libs/css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="/static/libs/fontawesome/css/font-awesome.min.css">
+  <--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.select/1.12.2/css/bootstrap-select.min.css">-->
+  <link rel="stylesheet" type="text/css" href="/static/other/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="static_url('style.css')}}">
+  <-- jstree -->
+  <--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.4/dist/themes/default/style.min.css">-->
+   <link rel="stylesheet" href="/static/other/style.min.css">
+</head>
+
+<body>
+  <p>your are silly</p>
+  <div id="app">
+    <nav class="navbar navbar-default" style="margin-bottom: 0px">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">ATX <strong>WEditor</strong></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <--         <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        </ul> -->
+        <form class="navbar-form navbar-left" onsubmit="return false">
+          <div class="form-group">
+            <select v-model="platform" class="selectpicker" value="Android" title="Platform" data-width="fit">
+              <option data-icon="glyphicon-piggy-bank" value="Android">Android</option>
+              <option data-icon="glyphicon-apple" value="iOS">iOS</option>
+              <option data-icon="glyphicon-apple" value="Neco">Neco(beta)</option>
+            </select>
+            <input type="text" v-model="serial" class="form-control" placeholder="deviceUrl">
+          </div>
+          <button type="submit" class="btn btn-default" click="doConnect">
+            Connect
+            <span v-if="deviceId" class="glyphicon glyphicon-grain color-green"></span>
+          </button>
+          <button :disabled="loading" class="btn btn-default" click="dumpHierarchyWithScreen()">
+            <i class="fa fa-refresh"></i> Dump Hierarchy
+          </button>
+          <template v-if="platform == 'Android'">
+            <el-switch v-model="liveScreen" active-text="实时" inactive-text="静态">
+            </el-switch>
+          </template>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <-- <li><a href="#">Link</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">相关文档 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a target="_blank" href="https://github.com/openatx/weditor">openatx/weditor</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a target="_blank" href="https://github.com/openatx/uiautomator2">openatx/uiautomator2</a></li>
+              <li><a target="_blank" href="https://github.com/openatx/facebook-wda">openatx/facebook-wda</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>

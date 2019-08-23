@@ -49,7 +49,5 @@ class TestRequestsCase(unittest.TestCase):
         logging.info(r.history)
 
 
-
-
 if __name__ == '__main__':
     unittest.main()
