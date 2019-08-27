@@ -1,0 +1,6 @@
+1  安装qt   5.12
+Qt官网目前已经不提供离线安装包的下载入口，但可以通过下面的网址下载离线安装包：
+
+http://download.qt.io/archive/qt/
+
+2  安装PyQt5  pip install PyQt5
