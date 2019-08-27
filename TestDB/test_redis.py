@@ -108,4 +108,93 @@ def set_fun():
     """
     r=redis
     name='tags'
+    # 向集合添加元素
     r.sadd(name, 'v1','v2','v3')
+    # 删除元素
+    r.srem(name,'v2')
+    # 随机删除并返回一个
+    r.spop(name)
+    # 移动元素从src到dst
+    r.smove(src='tags',dst='tags2',value='v1')
+    # 返回集合个数
+    r.scard(name)
+    # 判断是否是集合成员
+    r.sismember(name=name,value='Book')
+    # 返回给定集合的交集
+    r.sinter(['tags1','tags2'])
+    # 求交集并保存到dest
+    r.sinterstore('inttag',['tags','tags2'])
+    # 求并集
+    r.sunion(['tags','tags2'])
+    # 求并集并保存
+    r.sunionstore('inttag',['tags','tags2'])
+    # 求差集
+    r.sdiff(['tags','tags2'])
+    # 求差集并存储
+    r.sdiffstore('inttag',['tags','tags2'])
+    # 返回集合的所有元素
+    r.smembers(name)
+    # 随机返回一个元素，不删除
+    r.srandmember(name)
+
+def ordered_set():
+    """
+    有序集合比集合多了一个分数字段
+    :return:
+    """
+    r=redis
+    name='grade'
+    # 向有序集合添加元素，score用于排序
+    r.zadd(name,100,'B0',98,'Mk')
+    # 删除
+    r.zrem(name,'Mk')
+    # 判断元素是否存在，存在，更新score值，不存在，则添加
+    r.zincrby(name=name,value='B0',amount=-2)  # B0 score-2
+    # 返回给定值所排名次
+    r.zrank(name,value='B0')
+    # 返回给定值的倒数名次
+    r.zrevrank(name=name,value='Mk')
+    # 返回倒叙排序，排名在start至end之间的元素
+    r.zrevrange(name,start=1,end=2)
+    # 返回分数在给定区间的元素
+    r.zrangebyscore(name=name,min=80,max=95)
+    # 返回分数在给定区间的数量
+    r.zcount(name,min=50,max=60)
+    # 返回给定名字的元素个数
+    r.zcard(name)
+    # 删除排名在给定区间的元素
+    r.zremrangebyrank(name,min=10,max=20)
+    # 删除分数在给定区间的元素
+    r.zremrangebyscore(name,min=10,max=20)
+
+def map_fun():
+    """
+    散列表  键值对
+    :return:
+    """
+    r=redis
+    name='price'
+    # 添加映射
+    r.hset(name=name,key='cake',value=5.5)
+    # 如果不存在，则添加
+    r.hsetnx(name=name,key='book',value=6)
+    # 返回给定键的值
+    r.hget(name=name,key='book')
+    # 返回多个键对应的值
+    r.hmget(name=name,keys=['cake','book'])
+    # 批量添加映射
+    r.hmset(name=name,mapping={'banana':2,'pear':6})
+    # 增加散列值
+    r.hincrby(name,'cake',amount=3)
+    # 判断键名是否存在
+    r.hexists(name,key='apple')
+    # 删除映射
+    r.hdel(name,"banana")
+    # 获取映射个数
+    r.hlen(name)
+    # 获取所有键名
+    r.hkeys(name)
+    # 获取所有值
+    r.hvals(name)
+    # 获取所有键值对
+    r.hgetall(name)
