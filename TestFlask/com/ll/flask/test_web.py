@@ -12,12 +12,13 @@ from flask import redirect
 from flask import abort
 from flask import render_template
 
-app=Flask(__name__,template_folder="templates") #创建一个wsgi应用
+app=Flask(__name__,template_folder="templates",static_folder='static') # 创建一个wsgi应用
 
 
 @app.route('/')   # 添加路由 ：根
 def test_first():
     print("测试首先接口")
+    req=request
     response=make_response()
     response.set_cookie('index','2')
     return render_template('index.html')
@@ -82,6 +83,15 @@ def test_get_request_infos():
     print('url=',url)
     print('origin=',origin)
     return args
+
+@app.route('/ajax/')
+def test_ajax():
+    # 测试ajax请求
+    url=request.url
+    args=request.args
+    print(url,args)
+    print("ajax 请求信息")
+    return {"msg":"ajax 请求成功!"}
 
 
 class MiddleWare:

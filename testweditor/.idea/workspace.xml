@@ -2,20 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee50634f-0f2d-4a3e-8fdf-f0c43f167621" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HTMLTestRunnerCN/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HTMLTestRunnerCN/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HTMLTestRunnerCN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HTMLTestRunnerCN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessTest/test_asyncio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessTest/test_asyncio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SshTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SshTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebserviceTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebserviceTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../phone_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../phone_test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../phone_test/my_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/../phone_test/my_first.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../phone_test/my_second_phone_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../phone_test/my_second_phone_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testLocust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testLocust/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_excel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_excel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_unittest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_unittest/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestDB/test_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestDB/test_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestDB/test_ysql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/ace/ace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/ace/ext-language_tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/ace/keybinding-vim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/ace/mode-python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/ace/theme-monokai.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/css/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/css/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/vue-2.5.16/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/libs/vue-2.5.16/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/loading.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/analytics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/jstree.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/other/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/running.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestFlask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestFlask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestFlask/com/ll/flask/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestFlask/com/ll/flask/test_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TestFlask/com/ll/flask/test_web.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="2875">
               <caret line="154" selection-start-line="154" selection-end-line="154" />
               <folding>
                 <element signature="e#50#104#0" expanded="true" />
@@ -40,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="342" column="18" selection-start-line="342" selection-start-column="18" selection-end-line="342" selection-end-column="18" />
+            <state relative-caret-position="609">
+              <caret line="343" column="9" lean-forward="true" selection-start-line="343" selection-start-column="9" selection-end-line="343" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -101,11 +127,6 @@
             <path>
               <item name="testweditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="testweditor" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testweditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testweditor" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -115,7 +136,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weditor-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -203,8 +224,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2974589" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2974589" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,7 +382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="2875">
           <caret line="154" selection-start-line="154" selection-end-line="154" />
           <folding>
             <element signature="e#50#104#0" expanded="true" />
@@ -370,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="342" column="18" selection-start-line="342" selection-start-column="18" selection-end-line="342" selection-end-column="18" />
+        <state relative-caret-position="609">
+          <caret line="343" column="9" lean-forward="true" selection-start-line="343" selection-start-column="9" selection-end-line="343" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#span#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

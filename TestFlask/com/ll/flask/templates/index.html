@@ -1,22 +1,59 @@
-<DOCTYPE html>
+<DOCTYPE html/>
 <html>
 
 <head>
   <meta charset="utf-8" />
   <title>WEditor</title>
-  <--<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <!--<&#45;&#45;<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">&ndash;&gt;-->
   <link rel="stylesheet" href="/static/other/bootstrap.min.css">
-  <--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+  <!--<&#45;&#45;<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">&ndash;&gt;-->
   <link rel="stylesheet" href="/static/other/index.css">
 
   <link rel="stylesheet" type="text/css" href="/static/libs/css/buttons.css">
-  <link rel="stylesheet" type="text/css" href="/static/libs/fontawesome/css/font-awesome.min.css">
-  <--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.select/1.12.2/css/bootstrap-select.min.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="/static/libs/fontawesome/css/font-awesome.min.css">-->
+  <!--<&#45;&#45;<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.select/1.12.2/css/bootstrap-select.min.css">&ndash;&gt;-->
   <link rel="stylesheet" type="text/css" href="/static/other/bootstrap-select.min.css">
-  <link rel="stylesheet" type="text/css" href="static_url('style.css')}}">
-  <-- jstree -->
-  <--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.4/dist/themes/default/style.min.css">-->
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <!--<&#45;&#45; &#45;&#45;jstree2 &ndash;&gt;-->
+  <!--<&#45;&#45;<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.4/dist/themes/default/style.min.css">&ndash;&gt;-->
    <link rel="stylesheet" href="/static/other/style.min.css">
+  <script src="/static/other/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  //测试ajax 请求
+      testAjax();
+  });
+  function testAjax(){
+    $.get("/ajax/",function(data){
+        $("#editor").html(data);
+    });
+  }
+
+  function testAjax1(){
+    alert("do connect!");
+    //发送ajax请求
+    var xmlhttp;
+    if(window.XMLHttpRequest){
+        // code for IE7+,Firefox,Chrome,Opera,Safari
+        xmlhttp=new XMLHttpRequest();
+    }else {
+      //code for IE5,IE6
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function(){
+      alert("请求成功，返回");
+      alert(xmlhttp.readyState);
+      alert(xmlhttp.status);
+      alert(xmlhttp.responseText);
+      document.getElementById("editor").innerHTML=xmlhttp.responseText;
+      if(xmlhttp.readyState==4 && xmlhttp.status==200){
+          document.getElementById("editor").innerHTML=xmlhttp.responseText;
+      }
+    }
+    xmlhttp.open("POST","/ajax/",true);
+    xmlhttp.send();
+  }
+</script>
 </head>
 
 <body>
@@ -33,7 +70,7 @@
         <a class="navbar-brand" href="#">ATX <strong>WEditor</strong></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <--         <ul class="nav navbar-nav">
+        <!--         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         </ul> -->
         <form class="navbar-form navbar-left" onsubmit="return false">
@@ -45,7 +82,7 @@
             </select>
             <input type="text" v-model="serial" class="form-control" v-bind:placeholder="deviceUrl">
           </div>
-          <button type="submit" class="btn btn-default" v-on:click="doConnect">
+          <button type="submit" class="btn btn-default" onclick="doConnect()">
             Connect
             <span v-if="deviceId" class="glyphicon glyphicon-grain color-green"></span>
           </button>
@@ -58,7 +95,7 @@
           </template>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <-- <li><a href="#">Link</a></li> -->
+          <!-- <li><a href="#">Link</a></li> -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">相关文档 <span class="caret"></span></a>
@@ -91,7 +128,7 @@
             <i class="fa fa-chevron-left"></i> Back</button>
           <button class="btn" disabled="true">Menu</button>
         </section>
-        <-- <div class="horizon-gap"></div> -->
+        <!--<&#45;&#45; <div class="horizon-gap"></div> &ndash;&gt;-->
 
       </div>
       <div id="vertical-gap1" class="handle vertical-gap"></div>
@@ -110,7 +147,7 @@
             <div class="text-center">
               <button class="btn btn-default btn-sm" :disabled="nodeSelected" v-on:click="doTap()">Tap</button>
               <button class="btn btn-default btn-sm" v-on:click="doSendKeys('')">Send Keys</button>
-              <-- <button class="btn btn-default btn-sm" v-on:click="doClear()">Clear Text</button> -->
+              <!--<&#45;&#45; <button class="btn btn-default btn-sm" v-on:click="doClear()">Clear Text</button> &ndash;&gt;-->
             </div>
           </div>
           <table class="table table-bordered table-weditor table-condensed">
@@ -134,7 +171,7 @@
                 </tr>
                 <tr v-if="elem.anchor">
                   <td>anchor</td>
-                  <--<td contenteditable>elem.anchor.x}}, elem.anchor.y}}</td>-->
+                  <!--<&#45;&#45;<td contenteditable>elem.anchor.x}}, elem.anchor.y}}</td>&ndash;&gt;-->
                 </tr>
               </template>
               <tr>
@@ -190,7 +227,7 @@
                   <td v-text="elem.height"></td>
                 </tr>
               </template>
-              <-- common -->
+              <!--<&#45;&#45; common &ndash;&gt;-->
               <tr>
                 <td>enabled</td>
                 <td v-text="elem.enabled"></td>
@@ -203,7 +240,7 @@
                 <td>XPath</td>
                 <td contenteditable v-text="elemXPathLite"></td>
               </tr>
-              <-- <tr>
+              <!-- <tr>
                 <td>XPath(full)</td>
                 <td contenteditable v-text="elemXPathFull"></td>
               </tr> -->
@@ -225,7 +262,7 @@
           <h5>
             代码
           </h5>
-          <-- c9-ide -->
+          <!-- c9-ide -->
           <input type="text" v-model="generatedCode" class="form-control input-sm">
           <div class="checkbox">
             <label>
@@ -265,7 +302,7 @@
           <div id="editor"></div>
         </pre>
 
-        <-- Colding Area -->
+        <!-- Colding Area -->
         <el-tabs type="border-card" v-model="tabActiveName">
           <el-tab-pane label="Hierarchy" name="hierarchy">
             <div class="input-group input-group-sm">
@@ -295,7 +332,7 @@
       </div>
     </div>
 
-    <-- alert and dialogs -->
+    <!-- alert and dialogs -->
     <div class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -320,38 +357,21 @@
   </div>
 </body>
 
-<--<script src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>-->
-<--<script src="//cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-<--<script src="//cdn.jsdelivr.net/bootstrap.select/1.12.2/js/bootstrap-select.min.js"></script>-->
-<script src="/static/other/jquery.min.js"></script>
+<!--<script src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>-->
+<!--<script src="//cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdn.jsdelivr.net/bootstrap.select/1.12.2/js/bootstrap-select.min.js"></script>-->
+
 <script src="/static/other/bootstrap.min.js"></script>
 <script src="/static/other/bootstrap-select.min.js"></script>
 <script src="/static/ace/ace.js"></script>
 <script src="/static/ace/mode-python.js"></script>
-<-- <script src="http://10.240.187.174:8000/_d/js"></script> -->
-<--<script src="//cdn.jsdelivr.net/npm/jstree@3.3.4/dist/jstree.min.js"></script>-->
+<!-- <script src="http://10.240.187.174:8000/_d/js"></script> -->
+<!--<script src="//cdn.jsdelivr.net/npm/jstree@3.3.4/dist/jstree.min.js"></script>-->
 <script src="/static/other/jstree.min.js"></script>
-<script src="static_url('libs/vue-2.5.16/vue.js')}}"></script>
-<--<script src="//unpkg.com/element-ui/lib/index.js"></script>-->
+<script src="/static/libs/vue-2.5.16/vue.js"></script>
+<!--<script src="//unpkg.com/element-ui/lib/index.js"></script>-->
 <script src="/static/other/index.js"></script>
-<script src="static_url('js/common.js')}}"></script>
-<script src="static_url('js/index.js')}}"></script>
-
-<script>
-  (function (i, s, o, g, r, a, m) 
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () 
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '/static/other/analytics.js', 'ga');
-  //https://www.google.com/analytics/analytics.js
-  ga('create', 'UA-81205425-3', 'auto');
-  ga('send', 'pageview');
-</script>
+<script src="/static/js/common.js"></script>
+<!--<script src="/static/js/index.js"></script>-->
 
 </html>
