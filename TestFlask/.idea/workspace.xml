@@ -1,66 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b9e050-93b2-4f16-b319-e960f87f6e5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TestDB/test_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestDB/test_json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestDB/test_ysql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/ace/ace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/ace/ext-language_tools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/ace/keybinding-vim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/ace/mode-python.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/ace/theme-monokai.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/css/buttons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/css/font-awesome.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/fontawesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/vue-2.5.16/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/libs/vue-2.5.16/vue.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/loading.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/analytics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/bootstrap-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/bootstrap-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/jstree.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/other/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/running.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ll/flask/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/async_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/getter_proxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/proxy_crawler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/proxy_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/redis_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProxy/utls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ll/flask/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/com/ll/flask/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ll/flask/test_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ll/flask/test_web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestRrequestsHtml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestRrequestsHtml/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestRrequestsHtml/_trial_temp/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TestRrequestsHtml/_trial_temp/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestRrequestsHtml/_trial_temp/test1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestRrequestsHtml/test_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TestRrequestsHtml/test_requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testweditor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testweditor/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83b9e050-93b2-4f16-b319-e960f87f6e5c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,20 +13,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/ll/flask/test_web.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="227">
+              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="e#63#86#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com/ll/flask/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -281,7 +213,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25127333" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25127333" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.57894737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,20 +425,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com/ll/flask/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com/ll/flask/test_web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="227">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="e#63#86#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/ll/flask/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
